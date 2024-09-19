@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 .context-dark p.rights a:hover,
 .bg-gray-700 p.rights a:hover,
 .bg-gray-3 p.rights a:hover,
@@ -17752,6 +17751,10 @@ html:not(.ie-11):not(.ie-10) .countdown-circle {
 *
 * Owl Carousel
 */
+.owl-carousel .owl-nav {
+    display: none;
+}
+
 .owl-carousel .animated {
     animation-duration: 1000ms;
     animation-fill-mode: both;

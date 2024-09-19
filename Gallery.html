@@ -3,9 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gallery - Dulce Capricho Dessert Shop</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Link to custom CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Link to Owl Carousel CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl.carousel/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl.carousel/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+    <style>
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .gallery-item:hover .caption {
+            opacity: 1;
+        }
+        .section-xxl {
+            padding: 60px 0;
+        }
+        .bg-default {
+            background-color: #f8f9fa;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Dulce Capricho</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="section section-xxl bg-default">
+        <div class="container">
+            <h2 class="wow fadeScale">Gallery</h2>
+            <div class="row">
+                <!-- Gallery Item -->
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/gallery-1.jpg" alt="Delicious Cake">
+                        <div class="caption">
+                            <h4>Delicious Cake</h4>
+                            <p>A beautiful and tasty creation from our bakery.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item -->
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/gallery-2.jpg" alt="Cupcakes">
+                        <div class="caption">
+                            <h4>Cupcakes</h4>
+                            <p>Perfectly decorated cupcakes for any occasion.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item -->
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/gallery-3.jpg" alt="Wedding Cake">
+                        <div class="caption">
+                            <h4>Wedding Cake</h4>
+                            <p>An elegant wedding cake that will impress your guests.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more gallery items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Dulce Capricho Dessert Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl.carousel/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                items: 3, // Number of items to show at once
+                margin: 20, // Space between items
+                dots: true, // Enable dots for navigation
+                nav: true, // Show navigation arrows
+                loop: true, // Infinite loop
+                autoplay: false, // Disable autoplay
+                smartSpeed: 500, // Speed of transition
+                navText: ['<', '>'], // Navigation arrows text
+                responsive: {
+                    0: {
+                        items: 1 // Show 1 item for small screens
+                    },
+                    600: {
+                        items: 2 // Show 2 items for medium screens
+                    },
+                    1000: {
+                        items: 3 // Show 3 items for larger screens
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
