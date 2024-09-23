@@ -8156,7 +8156,7 @@ textarea.textarea-lg {
     text-align: center;
     border: 10px solid #f3f7f8;
     padding: 30px 15px 90px;
-    background-image: url("images/bg-img-1.jpg");
+    background-color: white;
     background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11565,6 +11565,7 @@ html.tablet .ui-to-top {
 *
 * RD Navbar
 */
+
 @keyframes rd-navbar-slide-down {
     0% {
         transform: translateY(-100%);
@@ -19702,4 +19703,84 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .ie-11 .rd-range-form-wrap span,
 .ie-edge .rd-range-form-wrap span {
     margin-right: 0;
+}
+
+/* Gallery */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10%;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .caption {
+    opacity: 1;
+}
+
+.section-xxl {
+    padding: 60px 0;
+}
+
+.bg-default {
+    background-color: #f8f9fa;
+}
+
+.gallery-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    padding: 20px;
+    text-align: center;
+}
+
+.price {
+    font-size: 1.25em;
+    color: #896432;
+    margin: 10px 0;
+}
+
+.btn-add-to-cart {
+    background-color: #896432;
+    color: white;
+    border: none;
+    padding: 10px 20px;
 }

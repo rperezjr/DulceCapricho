@@ -2,10 +2,9 @@
 <html class="wide wow-animation" lang="en">
 
 <head>
-    <title>Dulce Capricho - Bake & Treats</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Capricho</title>
     <script src="https://kit.fontawesome.com/358156db5c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -15,1076 +14,478 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&display=swap"
         rel="stylesheet">
-
-    <style>
-        .preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.9);
-            z-index: 9999;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .preloader-body {
-            position: relative;
-        }
-
-        .cssload-bell {
-            position: relative;
-            width: 70px;
-            height: 70px;
-        }
-
-        .cssload-circle {
-            position: absolute;
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            border: 5px solid transparent;
-            border-top-color: #3498db;
-            animation: cssload-spin 1.2s linear infinite;
-        }
-
-        .cssload-circle:nth-child(2) {
-            animation-delay: -0.1s;
-        }
-
-        .cssload-circle:nth-child(3) {
-            animation-delay: -0.2s;
-        }
-
-        .cssload-circle:nth-child(4) {
-            animation-delay: -0.3s;
-        }
-
-        .cssload-circle:nth-child(5) {
-            animation-delay: -0.4s;
-        }
-
-        @keyframes cssload-spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-    </style>
-
-    <script>
-        window.addEventListener("load", function () {
-            document.querySelector(".preloader").style.display = "none";
-        });
-    </script>
 </head>
 
 <body>
-    <div class="preloader">
-        <div class="preloader-body">
-            <div class="cssload-bell">
-                <div class="cssload-circle">
-                    <div class="cssload-inner"></div>
+<header class="section page-header">
+    <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-modern rd-navbar--is-touch rd-navbar-original rd-navbar-static"
+            data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed"
+            data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
+            data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static"
+            data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="100px"
+            data-xl-stick-up-offset="120px" data-xxl-stick-up-offset="140px" data-lg-stick-up="true"
+            data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1 toggle-original"
+                data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+            <div class="rd-navbar-aside-outer">
+                <div class="rd-navbar-aside">
+                    <!-- RD Navbar Panel-->
+                    <div class="rd-navbar-panel text-center">
+                        <div class="rd-navbar-brand">
+                            <div class="brand-circle">
+                                <h3 class="dancing-script-uniquifier" style="color: #896432;">Dulce Capricho</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="cssload-circle">
-                    <div class="cssload-inner"></div>
+                <div class="rd-navbar-main-outer">
+                    <div class="rd-navbar-main">
+                        <div class="rd-navbar-nav-wrap toggle-original-elements">
+                            <ul class="rd-navbar-nav">
+                                <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a></li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="Gallery.html">Gallery</a></li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="Shop.html">Shop</a></li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="cart.html">Cart</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="cssload-circle">
-                    <div class="cssload-inner"></div>
-                </div>
-                <div class="cssload-circle">
-                    <div class="cssload-inner"></div>
-                </div>
-                <div class="cssload-circle">
-                    <div class="cssload-inner"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <!-- Intro-->
+    <section class="section section-custom-1 bg-img-1 section-intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-xl-5 text-start position-relative">
+                    <div class="text-big text-primary wow fadeInLeft dancing-script-uniquifier">Dulce Capricho</div>
+                    <br></br>
+                    <h3 class="wow fadeInLeft fw-bold text-decor-line text-spacing-200 dancing-script-uniquifier"
+                        data-wow-delay=".2s">
+                        Bake & Treats</h3>
+                    <a class="button button-lg button-shadow-2 button-primary button-zakaria wow fadeInUp" href="#"
+                        data-toggle="modal" data-target="#contactModal">
+                        Get in touch
+                    </a>
+                    <!-- Modal Structure -->
+                    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog"
+                        aria-labelledby="contactModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="contactModalLabel">Contact Information
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="contacts-ruth">
+                                        <div class="unit unit-spacing-xs-2 align-items-center">
+                                            <div class="unit-left">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                                            <div class="unit-body">
+                                                <a href="#"> 9790 Lawrence 2225<br>Monett, MO 65708
+                                                    USA</a>
+                                            </div>
+                                        </div>
+                                        <div class="unit unit-spacing-xs-2 align-items-center">
+                                            <div class="unit-left">
+                                                <i class="fas fa-phone"></i>
+                                            </div>
+                                            <div class="unit-body">
+                                                <a href="tel:+1234567890">+1 (417) 669-9109</a>
+                                            </div>
+                                        </div>
+                                        <div class="unit unit-spacing-xs-2 align-items-center">
+                                            <div class="unit-left">
+                                                <i class="fas fa-envelope"></i>
+                                            </div>
+                                            <div class="unit-body">
+                                                <a href="mailto:mgperez120@gmail.com">mgperez120@gmail.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="button button-sm button-icon button-default-outline-3"
+                                        data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="page animated" style="animation-duration: 500ms;">
-        <!-- Page Header-->
-        <header class="section page-header">
-            <!-- RD Navbar-->
-            <div class="rd-navbar-wrap" style="height: 207.797px;">
-                <nav class="rd-navbar rd-navbar-modern rd-navbar--is-touch rd-navbar-original rd-navbar-static"
-                    data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed"
-                    data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
-                    data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
-                    data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static"
-                    data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="100px"
-                    data-xl-stick-up-offset="120px" data-xxl-stick-up-offset="140px" data-lg-stick-up="true"
-                    data-xl-stick-up="true" data-xxl-stick-up="true">
-                    <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1 toggle-original"
-                        data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
-                    <div class="rd-navbar-aside-outer">
-                        <div class="rd-navbar-aside">
-                            <div class="rd-navbar-collapse toggle-original-elements">
-                                <div class="contacts-ruth">
-                                    <div class="unit unit-spacing-xs-2 align-items-center">
-                                        <div class="unit-left">
-                                        </div>
-                                        <div class="unit-body"><i class="fas fa-map-marker-alt"></i><a href="#"> 9790
-                                                Lawrence 2225<br>Monett, MO 65708 USA</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a class="button button-sm button-icon button-icon-left button-default-outline-3 button-zakaria"
-                                    href="#">Get in touch</a>
-                            </div>
-                            <!-- RD Navbar Panel-->
-                            <div class="rd-navbar-panel">
-                                <!-- RD Navbar Toggle-->
-                                <button class="rd-navbar-toggle toggle-original"
-                                    data-rd-navbar-toggle=".rd-navbar-nav-wrap"></button>
-                                <!-- RD Navbar Brand-->
-                                <div class="rd-navbar-brand"><a class="brand" href="index.html">
-                                        <h3 class="dancing-script-uniquifier" style="color: #896432;">Dulce Capricho
-                                        </h3>
-                                </div>
-                            </div>
-                            <div class="rd-navbar-button"><a
-                                    class="button button-sm button-icon button-icon-left button-default-outline-3 button-zakaria"
-                                    href="#"><span class="icon fas fa-envelope"></span>Get in touch</a></div>
-                        </div>
-                    </div>
-                    <div class="rd-navbar-main-outer">
-                        <div class="rd-navbar-main">
-                            <div class="rd-navbar-nav-wrap toggle-original-elements">
-                                <!-- RD Navbar Nav-->
-                                <ul class="rd-navbar-nav">
-                                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
-                                    </li>
-                                    <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"><a
-                                            class="rd-nav-link" href="grid-gallery.html">Gallery</a><span
-                                            class="rd-navbar-submenu-toggle"></span>
-                                        <!-- RD Navbar Dropdown-->
-                                        <ul class="rd-menu rd-navbar-dropdown">
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                    href="grid-gallery.html">Grid Gallery</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                    href="grid-fullwidth-gallery.html">Grid Fullwidth Gallery</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                    href="masonry-gallery.html">Masonry Gallery</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                    href="masonry-fullwidth-gallery.html">Masonry Fullwidth Gallery</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"><a
-                                            class="rd-nav-link" href="grid-shop.html">Shop</a><span
-                                            class="rd-navbar-submenu-toggle"></span>
-                                    </li>
+        </div>
+    </section>
+    <!-- Promo-->
+    <section class="section section-sm bg-default pt-xl-0">
+        <div class="container">
+            <article class="promo-classic offset-negative-1">
+                <div class="promo-classic-title">Only Freshly Baked</div>
+                <p class="big promo-classic-text">All of our products are made from scratch using family recipes
+                    with only the highest quality ingredients. We bake and sell fresh daily to ensure only the best
+                    products are sold to our customers.</p><a
+                    class="button button-sm button-icon-3 button-primary button-zakaria" href="Gallery.html"><span
+                        class="mdi mdi-arrow-right"></span></a>
+            </article>
+        </div>
+    </section>
+    <!-- About Us-->
+    <section class="section section-sm section-last bg-default">
+        <div class="container">
+            <h2 class="wow fadeScale">What We Offer</h2>
+            <div class="row">
+                <!-- Carousel 1 -->
+                <div class="col-md-4">
+                    <div id="carouselExampleSlidesOnly1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- First Item -->
+                            <div class="carousel-item active">
+                                <article class="box-info-modern wow slideInUp" data-wow-delay=".1s">
+                                    <a class="box-info-modern-figure" href="#">
+                                        <img src="images/Img.png" alt="Party Cupcakes" class="d-block w-100">
+                                    </a>
+                                    <h4 class="box-info-modern-title"><a href="#">Party Cupcakes</a></h4>
+                                    <div class="box-info-modern-text">We provide a variety of cupcakes for any party
+                                        made with high-quality natural ingredients and no preservatives.</div>
+                                    <a class="box-info-modern-link" href="#">Read more</a>
+                                </article>
                             </div>
                         </div>
                     </div>
-                </nav>
-            </div>
-        </header>
-        <!-- Intro-->
-        <section class="section section-custom-1 bg-img-1 section-intro">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7 col-xl-5 text-start position-relative">
-                        <div class="text-big text-primary wow fadeInLeft dancing-script-uniquifier">Dulce Capricho</div>
-                        <br></br>
-                        <h3 class="wow fadeInLeft fw-bold text-decor-line text-spacing-200 dancing-script-uniquifier"
-                            data-wow-delay=".2s">
-                            Bake & Treats</h3>
-                        <a class="button button-lg button-shadow-2 button-primary button-zakaria wow fadeInUp"
-                            href="grid-shop.html">Shop now</a>
+                </div>
+                <!-- Carousel 2 -->
+                <div class="col-md-4">
+                    <div id="carouselExampleSlidesOnly2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- First Item -->
+                            <div class="carousel-item active">
+                                <article class="box-info-modern wow slideInUp" data-wow-delay=".1s">
+                                    <a class="box-info-modern-figure" href="#">
+                                        <img src="images/Img.png" alt="Choco cakes" class="d-block w-100">
+                                    </a>
+                                    <h4 class="box-info-modern-title"><a href="#">Choco cakes</a></h4>
+                                    <div class="box-info-modern-text">Nothing tastes better than a chocolate cake
+                                        with a variety of flavors, which is always available at our bakery.</div>
+                                    <a class="box-info-modern-link" href="#">Read more</a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel 3 -->
+                <div class="col-md-4">
+                    <div id="carouselExampleSlidesOnly3" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- First Item -->
+                            <div class="carousel-item active">
+                                <article class="box-info-modern wow slideInUp" data-wow-delay=".1s">
+                                    <a class="box-info-modern-figure" href="#">
+                                        <img src="images/Img.png" alt="Wedding cakes" class="d-block w-100">
+                                    </a>
+                                    <h4 class="box-info-modern-title"><a href="#">Wedding cakes</a></h4>
+                                    <div class="box-info-modern-text">Want to make your wedding unforgettable? Then
+                                        you need to order a unique wedding cake at Sweet Bakery!</div>
+                                    <a class="box-info-modern-link" href="#">Read more</a>
+                                </article>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Promo-->
-        <section class="section section-sm bg-default pt-xl-0">
-            <div class="container">
-                <article class="promo-classic offset-negative-1">
-                    <div class="promo-classic-title">Only Fresh Cakes</div>
-                    <p class="big promo-classic-text">All of our products are made from scratch using family recipes
-                        with only the highest quality ingredients. We bake and sell fresh daily to ensure only the best
-                        products are sold to our customers.</p><a
-                        class="button button-sm button-icon-3 button-primary button-zakaria" href="grid-shop.html"><span
-                            class="mdi mdi-arrow-right"></span></a>
+        </div>
+    </section>
+
+    <!-- New products-->
+    <section class="section section-xxl bg-image-1">
+        <div class="container">
+            <h2 class="wow fadeScale">New Products</h2>
+            <!-- Owl Carousel-->
+            <div class="owl-carousel owl-style-9" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4"
+                data-margin="30" data-dots="true" data-autoplay="false">
+
+                <!-- Product 1-->
+                <article class="product">
+                    <div class="product-body">
+                        <div class="product-figure">
+                            <img src="images/Img.png" alt="Chocolate Truffles"
+                                style="width: 100%; max-width: 200px; height: auto;">
+                        </div>
+                        <h5 class="product-title"><a href="#">Chocolate Truffles</a></h5>
+                        <div class="product-price-wrap">
+                            <div class="product-price product-price-old">$30.00</div>
+                            <div class="product-price">$23.00</div>
+                        </div>
+                    </div>
+                    <span class="product-badge product-badge-sale">Sale</span>
+                    <div class="product-button-wrap">
+                        <button class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
+                            onclick="addToCart({ id: 1, name: 'Chocolate Truffles', price: 23.00, quantity: 1, image: 'images/Img.png' })">Add
+                            to Cart</button>
+                    </div>
                 </article>
-            </div>
-        </section>
-        <!-- About Us-->
-        <section class="section section-sm section-last bg-default">
-            <div class="container">
-                <h2 class="wow fadeScale">What We Offer</h2>
-                <div class="row">
-                    <!-- Carousel 1 -->
-                    <div class="col-md-4">
-                        <div id="carouselExampleSlidesOnly1" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <!-- First Item -->
-                                <div class="carousel-item active">
-                                    <article class="box-info-modern wow slideInUp" data-wow-delay=".1s">
-                                        <a class="box-info-modern-figure" href="#">
-                                            <img src="images/offer-1-340x243.jpg" alt="Party Cupcakes"
-                                                class="d-block w-100">
-                                        </a>
-                                        <h4 class="box-info-modern-title"><a href="#">Party Cupcakes</a></h4>
-                                        <div class="box-info-modern-text">We provide a variety of cupcakes for any party
-                                            made with high-quality natural ingredients and no preservatives.</div>
-                                        <a class="box-info-modern-link" href="#">Read more</a>
-                                    </article>
-                                </div>
-                            </div>
-                            <!-- Navigation Buttons -->
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleSlidesOnly1" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleSlidesOnly1" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+
+                <!-- Product 2-->
+                <article class="product">
+                    <div class="product-body">
+                        <div class="product-figure">
+                            <img src="images/Img.png" alt="Chocolate Pudding"
+                                style="width: 100%; max-width: 200px; height: auto;">
+                        </div>
+                        <h5 class="product-title"><a href="#">Chocolate Pudding</a></h5>
+                        <div class="product-price-wrap">
+                            <div class="product-price">$25.00</div>
                         </div>
                     </div>
+                    <div class="product-button-wrap">
+                        <button class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
+                            onclick="addToCart({ id: 2, name: 'Chocolate Pudding', price: 25.00, quantity: 1, image: 'images/Img.png' })">Add
+                            to Cart</button>
+                    </div>
+                </article>
 
-                    <!-- Carousel 2 -->
-                    <div class="col-md-4">
-                        <div id="carouselExampleSlidesOnly2" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <!-- First Item -->
-                                <div class="carousel-item active">
-                                    <article class="box-info-modern wow slideInUp" data-wow-delay=".1s">
-                                        <a class="box-info-modern-figure" href="#">
-                                            <img src="images/offer-2-340x243.jpg" alt="Choco cakes"
-                                                class="d-block w-100">
-                                        </a>
-                                        <h4 class="box-info-modern-title"><a href="#">Choco cakes</a></h4>
-                                        <div class="box-info-modern-text">Nothing tastes better than a chocolate cake
-                                            with a variety of flavors, which is always available at our bakery.</div>
-                                        <a class="box-info-modern-link" href="#">Read more</a>
-                                    </article>
-                                </div>
-                            </div>
-                            <!-- Navigation Buttons -->
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleSlidesOnly2" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleSlidesOnly2" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                <!-- Product 3-->
+                <article class="product">
+                    <div class="product-body">
+                        <div class="product-figure">
+                            <img src="images/Img.png" alt="Dark Chocolate Cake"
+                                style="width: 100%; max-width: 200px; height: auto;">
+                        </div>
+                        <h5 class="product-title"><a href="#">Dark Chocolate Cake</a></h5>
+                        <div class="product-price-wrap">
+                            <div class="product-price">$15.00</div>
                         </div>
                     </div>
+                    <span class="product-badge product-badge-new">New</span>
+                    <div class="product-button-wrap">
+                        <button class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
+                            onclick="addToCart({ id: 3, name: 'Dark Chocolate Cake', price: 15.00, quantity: 1, image: 'images/Img.png' })">Add
+                            to Cart</button>
+                    </div>
+                </article>
 
-                    <!-- Carousel 3 -->
-                    <div class="col-md-4">
-                        <div id="carouselExampleSlidesOnly3" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <!-- First Item -->
-                                <div class="carousel-item active">
-                                    <article class="box-info-modern wow slideInUp" data-wow-delay=".1s">
-                                        <a class="box-info-modern-figure" href="#">
-                                            <img src="images/offer-3-340x243.jpg" alt="Wedding cakes"
-                                                class="d-block w-100">
-                                        </a>
-                                        <h4 class="box-info-modern-title"><a href="#">Wedding cakes</a></h4>
-                                        <div class="box-info-modern-text">Want to make your wedding unforgettable? Then
-                                            you need to order a unique wedding cake at Sweet Bakery!</div>
-                                        <a class="box-info-modern-link" href="#">Read more</a>
-                                    </article>
-                                </div>
-                            </div>
-                            <!-- Navigation Buttons -->
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleSlidesOnly3" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleSlidesOnly3" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                <!-- Product 4-->
+                <article class="product">
+                    <div class="product-body">
+                        <div class="product-figure">
+                            <img src="images/Img.png" alt="Chocolate Cookies"
+                                style="width: 100%; max-width: 200px; height: auto;">
+                        </div>
+                        <h5 class="product-title"><a href="#">Chocolate Cookies</a></h5>
+                        <div class="product-price-wrap">
+                            <div class="product-price">$12.00</div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- New products-->
-        <section class="section section-xxl bg-image-1">
-            <div class="container">
-                <h2 class="wow fadeScale">New products</h2>
-                <!-- Owl Carousel-->
-                <div class="owl-carousel owl-style-9 owl-loaded owl-drag" data-items="1" data-sm-items="2"
-                    data-md-items="3" data-lg-items="4" data-margin="30" data-dots="true" data-autoplay="false">
-                    <!-- Product-->
-
-                    <!-- Product-->
-
-                    <!-- Product-->
-
-                    <!-- Product-->
-
-                    <!-- Product-->
-
-                    <!-- Product-->
-
-                    <!-- Product-->
-
-                    <!-- Product-->
-
-                    <div class="owl-stage-outer">
-                        <div class="owl-stage"
-                            style="transform: translate3d(-1215px, 0px, 0px); transition: all; width: 4860px;">
-                            <div class="owl-item cloned" style="width: 273.75px; margin-right: 30px;">
-                                <article class="product">
-                                    <div class="product-body">
-                                        <div class="product-figure"><img src="images/product-1.jpg" alt="" width="152"
-                                                height="160">
-                                        </div>
-                                        <h5 class="product-title"><a href="single-product.html">Chocolate Truffles</a>
-                                        </h5>
-                                        <div class="product-price-wrap">
-                                            <div class="product-price product-price-old">$30.00</div>
-                                            <div class="product-price">$23.00</div>
-                                        </div>
-                                    </div><span class="product-badge product-badge-sale">Sale</span>
-                                    <div class="product-button-wrap">
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-search74"
-                                                href="single-product.html"></a></div>
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                                                href="cart-page.html"></a></div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item cloned" style="width: 273.75px; margin-right: 30px;">
-                                <article class="product">
-                                    <div class="product-body">
-                                        <div class="product-figure"><img src="images/product-2.jpg" alt="" width="157"
-                                                height="127">
-                                        </div>
-                                        <h5 class="product-title"><a href="single-product.html">Chocolate Pudding</a>
-                                        </h5>
-                                        <div class="product-price-wrap">
-                                            <div class="product-price">$25.00</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-button-wrap">
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-search74"
-                                                href="single-product.html"></a></div>
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                                                href="cart-page.html"></a></div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item cloned" style="width: 273.75px; margin-right: 30px;">
-                                <article class="product">
-                                    <div class="product-body">
-                                        <div class="product-figure"><img src="images/product-3-179x114.png" alt=""
-                                                width="179" height="114">
-                                        </div>
-                                        <h5 class="product-title"><a href="single-product.html">Dark Chocolate Cake</a>
-                                        </h5>
-                                        <div class="product-price-wrap">
-                                            <div class="product-price">$15.00</div>
-                                        </div>
-                                    </div><span class="product-badge product-badge-new">New</span>
-                                    <div class="product-button-wrap">
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-search74"
-                                                href="single-product.html"></a></div>
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                                                href="cart-page.html"></a></div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item cloned" style="width: 273.75px; margin-right: 30px;">
-                                <article class="product">
-                                    <div class="product-body">
-                                        <div class="product-figure"><img src="images/product-4-215x112.png" alt=""
-                                                width="215" height="112">
-                                        </div>
-                                        <h5 class="product-title"><a href="single-product.html">Chocolate Cookies</a>
-                                        </h5>
-                                        <div class="product-price-wrap">
-                                            <div class="product-price">$12.00</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-button-wrap">
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-search74"
-                                                href="single-product.html"></a></div>
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                                                href="cart-page.html"></a></div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item active" style="width: 273.75px; margin-right: 30px;">
-                                <article class="product">
-                                    <div class="product-body">
-                                        <div class="product-figure"><img src="images/product-1.jpg" alt="" width="152"
-                                                height="160">
-                                        </div>
-                                        <h5 class="product-title"><a href="single-product.html">Chocolate Truffles</a>
-                                        </h5>
-                                        <div class="product-price-wrap">
-                                            <div class="product-price product-price-old">$30.00</div>
-                                            <div class="product-price">$23.00</div>
-                                        </div>
-                                    </div><span class="product-badge product-badge-sale">Sale</span>
-                                    <div class="product-button-wrap">
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-search74"
-                                                href="single-product.html"></a></div>
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                                                href="cart-page.html"></a></div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item active" style="width: 273.75px; margin-right: 30px;">
-                                <article class="product">
-                                    <div class="product-body">
-                                        <div class="product-figure"><img src="images/product-2.jpg" alt="" width="157"
-                                                height="127">
-                                        </div>
-                                        <h5 class="product-title"><a href="single-product.html">Chocolate Pudding</a>
-                                        </h5>
-                                        <div class="product-price-wrap">
-                                            <div class="product-price">$25.00</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-button-wrap">
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-search74"
-                                                href="single-product.html"></a></div>
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                                                href="cart-page.html"></a></div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item active" style="width: 273.75px; margin-right: 30px;">
-                                <article class="product">
-                                    <div class="product-body">
-                                        <div class="product-figure"><img src="images/product-3-179x114.png" alt=""
-                                                width="179" height="114">
-                                        </div>
-                                        <h5 class="product-title"><a href="single-product.html">Dark Chocolate Cake</a>
-                                        </h5>
-                                        <div class="product-price-wrap">
-                                            <div class="product-price">$15.00</div>
-                                        </div>
-                                    </div><span class="product-badge product-badge-new">New</span>
-                                    <div class="product-button-wrap">
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-search74"
-                                                href="single-product.html"></a></div>
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                                                href="cart-page.html"></a></div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item active" style="width: 273.75px; margin-right: 30px;">
-                                <article class="product">
-                                    <div class="product-body">
-                                        <div class="product-figure"><img src="images/product-4-215x112.png" alt=""
-                                                width="215" height="112">
-                                        </div>
-                                        <h5 class="product-title"><a href="single-product.html">Chocolate Cookies</a>
-                                        </h5>
-                                        <div class="product-price-wrap">
-                                            <div class="product-price">$12.00</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-button-wrap">
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-search74"
-                                                href="single-product.html"></a></div>
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                                                href="cart-page.html"></a></div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item" style="width: 273.75px; margin-right: 30px;">
-                                <article class="product">
-                                    <div class="product-body">
-                                        <div class="product-figure"><img src="images/product-1-152x160.png" alt=""
-                                                width="152" height="160">
-                                        </div>
-                                        <h5 class="product-title"><a href="single-product.html">Chocolate Truffles</a>
-                                        </h5>
-                                        <div class="product-price-wrap">
-                                            <div class="product-price product-price-old">$30.00</div>
-                                            <div class="product-price">$23.00</div>
-                                        </div>
-                                    </div><span class="product-badge product-badge-sale">Sale</span>
-                                    <div class="product-button-wrap">
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-search74"
-                                                href="single-product.html"></a></div>
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                                                href="cart-page.html"></a></div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item" style="width: 273.75px; margin-right: 30px;">
-                                <article class="product">
-                                    <div class="product-body">
-                                        <div class="product-figure"><img src="images/product-2-157x127.png" alt=""
-                                                width="157" height="127">
-                                        </div>
-                                        <h5 class="product-title"><a href="single-product.html">Chocolate Pudding</a>
-                                        </h5>
-                                        <div class="product-price-wrap">
-                                            <div class="product-price">$25.00</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-button-wrap">
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-search74"
-                                                href="single-product.html"></a></div>
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                                                href="cart-page.html"></a></div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item" style="width: 273.75px; margin-right: 30px;">
-                                <article class="product">
-                                    <div class="product-body">
-                                        <div class="product-figure"><img src="images/product-3-179x114.png" alt=""
-                                                width="179" height="114">
-                                        </div>
-                                        <h5 class="product-title"><a href="single-product.html">Dark Chocolate Cake</a>
-                                        </h5>
-                                        <div class="product-price-wrap">
-                                            <div class="product-price">$15.00</div>
-                                        </div>
-                                    </div><span class="product-badge product-badge-new">New</span>
-                                    <div class="product-button-wrap">
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-search74"
-                                                href="single-product.html"></a></div>
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                                                href="cart-page.html"></a></div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item" style="width: 273.75px; margin-right: 30px;">
-                                <article class="product">
-                                    <div class="product-body">
-                                        <div class="product-figure"><img src="images/product-4-215x112.png" alt=""
-                                                width="215" height="112">
-                                        </div>
-                                        <h5 class="product-title"><a href="single-product.html">Chocolate Cookies</a>
-                                        </h5>
-                                        <div class="product-price-wrap">
-                                            <div class="product-price">$12.00</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-button-wrap">
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-search74"
-                                                href="single-product.html"></a></div>
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                                                href="cart-page.html"></a></div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item cloned" style="width: 273.75px; margin-right: 30px;">
-                                <article class="product">
-                                    <div class="product-body">
-                                        <div class="product-figure"><img src="images/product-1-152x160.png" alt=""
-                                                width="152" height="160">
-                                        </div>
-                                        <h5 class="product-title"><a href="single-product.html">Chocolate Truffles</a>
-                                        </h5>
-                                        <div class="product-price-wrap">
-                                            <div class="product-price product-price-old">$30.00</div>
-                                            <div class="product-price">$23.00</div>
-                                        </div>
-                                    </div><span class="product-badge product-badge-sale">Sale</span>
-                                    <div class="product-button-wrap">
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-search74"
-                                                href="single-product.html"></a></div>
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                                                href="cart-page.html"></a></div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item cloned" style="width: 273.75px; margin-right: 30px;">
-                                <article class="product">
-                                    <div class="product-body">
-                                        <div class="product-figure"><img src="images/product-2-157x127.png" alt=""
-                                                width="157" height="127">
-                                        </div>
-                                        <h5 class="product-title"><a href="single-product.html">Chocolate Pudding</a>
-                                        </h5>
-                                        <div class="product-price-wrap">
-                                            <div class="product-price">$25.00</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-button-wrap">
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-search74"
-                                                href="single-product.html"></a></div>
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                                                href="cart-page.html"></a></div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item cloned" style="width: 273.75px; margin-right: 30px;">
-                                <article class="product">
-                                    <div class="product-body">
-                                        <div class="product-figure"><img src="images/product-3-179x114.png" alt=""
-                                                width="179" height="114">
-                                        </div>
-                                        <h5 class="product-title"><a href="single-product.html">Dark Chocolate Cake</a>
-                                        </h5>
-                                        <div class="product-price-wrap">
-                                            <div class="product-price">$15.00</div>
-                                        </div>
-                                    </div><span class="product-badge product-badge-new">New</span>
-                                    <div class="product-button-wrap">
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-search74"
-                                                href="single-product.html"></a></div>
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                                                href="cart-page.html"></a></div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item cloned" style="width: 273.75px; margin-right: 30px;">
-                                <article class="product">
-                                    <div class="product-body">
-                                        <div class="product-figure"><img src="images/product-4-215x112.png" alt=""
-                                                width="215" height="112">
-                                        </div>
-                                        <h5 class="product-title"><a href="single-product.html">Chocolate Cookies</a>
-                                        </h5>
-                                        <div class="product-price-wrap">
-                                            <div class="product-price">$12.00</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-button-wrap">
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-search74"
-                                                href="single-product.html"></a></div>
-                                        <div class="product-button"><a
-                                                class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                                                href="cart-page.html"></a></div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
+                    <div class="product-button-wrap">
+                        <button class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
+                            onclick="addToCart({ id: 4, name: 'Chocolate Cookies', price: 12.00, quantity: 1, image: 'images/Img.png' })">Add
+                            to Cart</button>
                     </div>
-                </div>
+                </article>
+
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- About Us-->
-        <section class="section section-xxl bg-default">
-            <div class="container">
-                <h2 class="wow fadeScale">About us</h2>
-                <div class="row row-30 row-lg justify-content-center">
-                    <div class="col-sm-8 col-md-7 col-lg-6 wow fadeInLeft"><img src="images/about-570x511.jpg" alt=""
-                            width="570" height="511">
-                    </div>
-                    <div class="col-md-10 col-lg-6 wow fadeInRight">
-                        <!-- Bootstrap tabs-->
-                        <div class="tabs-custom tabs-jean" id="tabs-1">
-                            <!-- Tab panes-->
-                            <div class="tab-content">
-                                <div class="tab-pane fade show active" id="tabs-1-1" role="tabpanel">
-                                    <div class="box-info-creative">
-                                        <h4 class="box-info-creative-title"><a href="#">providing quality baked goods
-                                                for all customers</a></h4>
-                                        <div class="box-info-creative-text">Our mission is to create a bakery that makes
-                                            the best quality baked goods on site from scratch, and where both employees
-                                            and customers would feel comfortable.</div><a
-                                            class="link-classic box-info-creative-link" href="#">Read more</a>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="tabs-1-2" role="tabpanel">
-                                    <div class="box-info-creative">
-                                        <h4 class="box-info-creative-title"><a href="#">Ensuring the Best Atmosphere for
-                                                Everyone</a></h4>
-                                        <div class="box-info-creative-text">We see the most important part of our
-                                            business in ensuring the happiness of our staff and the satisfaction of our
-                                            clients by creating a welcoming and caring atmosphere.</div><a
-                                            class="link-classic box-info-creative-link" href="#">Read more</a>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="tabs-1-3" role="tabpanel">
-                                    <div class="box-info-creative">
-                                        <h4 class="box-info-creative-title"><a href="#">Serving only the freshest baked
-                                                goods for you</a></h4>
-                                        <div class="box-info-creative-text">We aim to deliver the best baked goods for
-                                            corporate events and individual celebrations, while also offering the best
-                                            level of customer service in the United States.</div><a
-                                            class="link-classic box-info-creative-link" href="#">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Nav tabs-->
-                            <div class="nav-tabs-wrap">
-                                <ul class="nav nav-tabs" role="tablist">
-                                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-1-1"
-                                            data-bs-toggle="tab" aria-selected="true" role="tab">Our mission</a></li>
-                                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-2"
-                                            data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="tab">Our
-                                            Values</a></li>
-                                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-3"
-                                            data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="tab">Our
-                                            goals</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA 2-->
-        <section class="section section-xxl section-inset-1 bg-image"
-            style="background-image: url(images/bg-cta-1.jpg);">
-            <div class="container box-cta">
-                <h3 class="fw-normal text-transform-none wow fadeInDown text-decorative text-primary text-spacing-75">
-                    Unique Flavors and Fresh Ingredients</h3>
-                <h2 class="text-spacing-75 text-black-800 wow fadeScale">All Kinds of Cakes</h2><a
-                    class="button button-lg button-primary button-zakaria wow fadeInUp" href="#">Read More</a>
-            </div>
-        </section>
-
-        <!-- Out Clients-->
-        <section class="section section-xxl bg-default">
-            <div class="container">
-                <h2 class="wow fadeScale">Testimonials</h2>
-                <!-- Owl Carousel-->
-                <div class="owl-carousel owl-style-11 owl-loaded owl-drag" data-items="1" data-sm-items="1"
-                    data-md-items="1" data-lg-items="2" data-xl-items="2" data-xxl-items="2" data-margin="30"
-                    data-dots="true" data-autoplay="false">
-                    <!-- Quote Carly-->
-
-                    <!-- Quote Carly-->
-
-                    <!-- Quote Carly-->
-
-                    <!-- Quote Carly-->
-
-                    <div class="owl-stage-outer">
-                        <div class="owl-stage"
-                            style="transform: translate3d(-1215px, 0px, 0px); transition: all; width: 4860px;">
-                            <div class="owl-item cloned" style="width: 577.5px; margin-right: 30px;">
-                                <article class="quote-carly quote-carly-1">
-                                    <div class="quote-carly-text">
-                                        <div class="q">If you are looking for the mouth deliciousness, then you should
-                                            definitely try the goods from the Sweet Bakery.</div>
-                                    </div>
-                                    <div class="quote-carly-footer">
-                                        <div class="unit unit-spacing-sm flex-column flex-md-row align-items-center">
-                                            <div class="unit-left">
-                                                <div class="quote-carly-figure"><img src="images/user-5-62x62.jpg"
-                                                        alt="" width="62" height="62">
-                                                </div>
-                                            </div>
-                                            <div class="unit-body">
-                                                <div class="quote-carly-author">Sam Wilson</div>
-                                                <div class="quote-carly-status">Client</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item cloned" style="width: 577.5px; margin-right: 30px;">
-                                <article class="quote-carly quote-carly-1">
-                                    <div class="quote-carly-text">
-                                        <div class="q">This bakery was great to work with and I will be using them for
-                                            my future events. Their cupcakes tasted absolutely delightful.</div>
-                                    </div>
-                                    <div class="quote-carly-footer">
-                                        <div class="unit unit-spacing-sm flex-column flex-md-row align-items-center">
-                                            <div class="unit-left">
-                                                <div class="quote-carly-figure"><img src="images/user-6-62x62.jpg"
-                                                        alt="" width="62" height="62">
-                                                </div>
-                                            </div>
-                                            <div class="unit-body">
-                                                <div class="quote-carly-author">Jane Peterson</div>
-                                                <div class="quote-carly-status">Client</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item active" style="width: 577.5px; margin-right: 30px;">
-                                <article class="quote-carly quote-carly-1">
-                                    <div class="quote-carly-text">
-                                        <div class="q">Thank you so much for the elegant cupcakes. They looked and
-                                            tasted amazing. I’m recommending you to all my friends.</div>
-                                    </div>
-                                    <div class="quote-carly-footer">
-                                        <div class="unit unit-spacing-sm flex-column flex-md-row align-items-center">
-                                            <div class="unit-left">
-                                                <div class="quote-carly-figure"><img src="images/user-10-62x62.jpg"
-                                                        alt="" width="62" height="62">
-                                                </div>
-                                            </div>
-                                            <div class="unit-body">
-                                                <div class="quote-carly-author">Patrick Goodman</div>
-                                                <div class="quote-carly-status">Client</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item active" style="width: 577.5px; margin-right: 30px;">
-                                <article class="quote-carly quote-carly-1">
-                                    <div class="quote-carly-text">
-                                        <div class="q">Just a note to let you know how fabulous your wedding cake was.
-                                            Many guests commented on how delicious it tasted.</div>
-                                    </div>
-                                    <div class="quote-carly-footer">
-                                        <div class="unit unit-spacing-sm flex-column flex-md-row align-items-center">
-                                            <div class="unit-left">
-                                                <div class="quote-carly-figure"><img src="images/user-11-62x62.jpg"
-                                                        alt="" width="62" height="62">
-                                                </div>
-                                            </div>
-                                            <div class="unit-body">
-                                                <div class="quote-carly-author">Jane Smith</div>
-                                                <div class="quote-carly-status">Client</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item" style="width: 577.5px; margin-right: 30px;">
-                                <article class="quote-carly quote-carly-1">
-                                    <div class="quote-carly-text">
-                                        <div class="q">If you are looking for the mouth deliciousness, then you should
-                                            definitely try the goods from the Sweet Bakery.</div>
-                                    </div>
-                                    <div class="quote-carly-footer">
-                                        <div class="unit unit-spacing-sm flex-column flex-md-row align-items-center">
-                                            <div class="unit-left">
-                                                <div class="quote-carly-figure"><img src="images/user-5-62x62.jpg"
-                                                        alt="" width="62" height="62">
-                                                </div>
-                                            </div>
-                                            <div class="unit-body">
-                                                <div class="quote-carly-author">Sam Wilson</div>
-                                                <div class="quote-carly-status">Client</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item" style="width: 577.5px; margin-right: 30px;">
-                                <article class="quote-carly quote-carly-1">
-                                    <div class="quote-carly-text">
-                                        <div class="q">This bakery was great to work with and I will be using them for
-                                            my future events. Their cupcakes tasted absolutely delightful.</div>
-                                    </div>
-                                    <div class="quote-carly-footer">
-                                        <div class="unit unit-spacing-sm flex-column flex-md-row align-items-center">
-                                            <div class="unit-left">
-                                                <div class="quote-carly-figure"><img src="images/user-6-62x62.jpg"
-                                                        alt="" width="62" height="62">
-                                                </div>
-                                            </div>
-                                            <div class="unit-body">
-                                                <div class="quote-carly-author">Jane Peterson</div>
-                                                <div class="quote-carly-status">Client</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item cloned" style="width: 577.5px; margin-right: 30px;">
-                                <article class="quote-carly quote-carly-1">
-                                    <div class="quote-carly-text">
-                                        <div class="q">Thank you so much for the elegant cupcakes. They looked and
-                                            tasted amazing. I’m recommending you to all my friends.</div>
-                                    </div>
-                                    <div class="quote-carly-footer">
-                                        <div class="unit unit-spacing-sm flex-column flex-md-row align-items-center">
-                                            <div class="unit-left">
-                                                <div class="quote-carly-figure"><img src="images/user-10-62x62.jpg"
-                                                        alt="" width="62" height="62">
-                                                </div>
-                                            </div>
-                                            <div class="unit-body">
-                                                <div class="quote-carly-author">Patrick Goodman</div>
-                                                <div class="quote-carly-status">Client</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="owl-item cloned" style="width: 577.5px; margin-right: 30px;">
-                                <article class="quote-carly quote-carly-1">
-                                    <div class="quote-carly-text">
-                                        <div class="q">Just a note to let you know how fabulous your wedding cake was.
-                                            Many guests commented on how delicious it tasted.</div>
-                                    </div>
-                                    <div class="quote-carly-footer">
-                                        <div class="unit unit-spacing-sm flex-column flex-md-row align-items-center">
-                                            <div class="unit-left">
-                                                <div class="quote-carly-figure"><img src="images/user-11-62x62.jpg"
-                                                        alt="" width="62" height="62">
-                                                </div>
-                                            </div>
-                                            <div class="unit-body">
-                                                <div class="quote-carly-author">Jane Smith</div>
-                                                <div class="quote-carly-status">Client</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Page Footer-->
-        <footer class="section footer-modern">
-            <div class="footer-modern-body section-xl">
-                <div class="container">
-                    <div class="row row-40 row-md-50 justify-content-xl-between">
-                        <div class="col-md-10 col-lg-3 col-xl-4 wow fadeInRight">
-                            <div class="inset-xl-right-70">
-                                <h5 class="footer-modern-title">Gallery</h5>
-                                <div class="row row-10 gutters-10" data-lightgallery="group">
-                                    <div class="col-4 col-sm-2 col-lg-4">
-                                        <!-- Thumbnail Minimal--><a class="thumbnail-minimal"
-                                            href="images/grid-gallery-1-original.jpg" data-lightgallery="item"><img
-                                                src="images/grid-gallery-1-130x130.jpg" alt="" width="130"
-                                                height="130"></a>
-                                    </div>
-                                    <div class="col-4 col-sm-2 col-lg-4">
-                                        <!-- Thumbnail Minimal--><a class="thumbnail-minimal"
-                                            href="images/grid-gallery-2-original.jpg" data-lightgallery="item"><img
-                                                src="images/grid-gallery-2-130x130.jpg" alt="" width="130"
-                                                height="130"></a>
-                                    </div>
-                                    <div class="col-4 col-sm-2 col-lg-4">
-                                        <!-- Thumbnail Minimal--><a class="thumbnail-minimal"
-                                            href="images/grid-gallery-3-original.jpg" data-lightgallery="item"><img
-                                                src="images/grid-gallery-3-130x130.jpg" alt="" width="130"
-                                                height="130"></a>
-                                    </div>
-                                    <div class="col-4 col-sm-2 col-lg-4">
-                                        <!-- Thumbnail Minimal--><a class="thumbnail-minimal"
-                                            href="images/grid-gallery-4-original.jpg" data-lightgallery="item"><img
-                                                src="images/grid-gallery-4-130x130.jpg" alt="" width="130"
-                                                height="130"></a>
-                                    </div>
-                                    <div class="col-4 col-sm-2 col-lg-4">
-                                        <!-- Thumbnail Minimal--><a class="thumbnail-minimal"
-                                            href="images/grid-gallery-5-original.jpg" data-lightgallery="item"><img
-                                                src="images/grid-gallery-5-130x130.jpg" alt="" width="130"
-                                                height="130"></a>
-                                    </div>
-                                    <div class="col-4 col-sm-2 col-lg-4">
-                                        <!-- Thumbnail Minimal--><a class="thumbnail-minimal"
-                                            href="images/grid-gallery-6-original.jpg" data-lightgallery="item"><img
-                                                src="images/grid-gallery-6-130x130.jpg" alt="" width="130"
-                                                height="130"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-7 col-lg-5 wow fadeInRight" data-wow-delay=".1s">
-                            <h5 class="footer-modern-title">Quick Links</h5>
-                            <ul class="footer-modern-list footer-modern-list-2 d-sm-inline-block d-md-block">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="our-team.html">Our Team</a></li>
-                                <li><a href="grid-shop.html">Shop</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="contact-us.html">Contact Us</a></li>
-                                <li><a href="what-we-offer.html">What We Offer</a></li>
-                                <li><a href="grid-blog.html">Our Blog</a></li>
-                                <li><a href="testimonials.html">Testimonials</a></li>
-                                <li><a href="#">Baking School</a></li>
-                                <li><a href="#">Our Recipes</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3 wow fadeInRight" data-wow-delay=".2s">
-                            <h5 class="footer-modern-title">Get in touch</h5>
-                            <ul class="contacts-creative">
-                                <li>
-                                    <div class="unit unit-spacing-sm flex-column flex-md-row">
-                                        <div class="unit-left"><span class="icon mdi mdi-map-marker"></span></div>
-                                        <div class="unit-body"><a href="#">523 Sylvan Ave, 5th Floor<br>Mountain View,
-                                                CA 94041 USA</a></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="unit unit-spacing-sm flex-column flex-md-row">
-                                        <div class="unit-left"><span class="icon mdi mdi-phone"></span></div>
-                                        <div class="unit-body"><a href="tel:#">+1 (844) 123 456 78</a></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="unit unit-spacing-sm flex-column flex-md-row">
-                                        <div class="unit-left"><span class="icon mdi mdi-email-outline"></span></div>
-                                        <div class="unit-body"><a href="mailto:#">info@demolink.org</a></div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="list-inline list-social-3 list-inline-sm">
-                                <li><a class="icon mdi mdi-facebook icon-xxs" href="#"></a></li>
-                                <li><a class="icon mdi mdi-twitter icon-xxs" href="#"></a></li>
-                                <li><a class="icon mdi mdi-instagram icon-xxs" href="#"></a></li>
-                                <li><a class="icon mdi mdi-google-plus icon-xxs" href="#"></a></li>
-                                <li><a class="icon mdi mdi-skype icon-xxs" href="#"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-modern-panel text-center">
-                <div class="container">
-                    <p class="rights"><span>©&nbsp;</span><span
-                            class="copyright-year">2024</span><span>.&nbsp;</span><span>Sweet
-                            Bakery</span><span>.&nbsp;</span><span>All Rights Reserved</span><span>.&nbsp;</span><a
-                            href="privacy-policy.html">Privacy Policy.</a></p>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
-        $(document).ready(function(){
+        // Assuming addToCart function is defined in your main script
+        function addToCart(product) {
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            const existingItem = cartItems.find(item => item.id === product.id);
+
+            if (existingItem) {
+                existingItem.quantity += product.quantity;
+            } else {
+                cartItems.push(product);
+            }
+
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+            alert(`${product.name} has been added to your cart!`);
+        }
+    </script>
+
+
+    <!-- About Us-->
+    <section class="section section-xxl bg-default">
+        <div class="container">
+            <h2 class="wow fadeScale">About us</h2>
+            <div class="row row-30 row-lg justify-content-center">
+                <div class="col-sm-8 col-md-7 col-lg-6 wow fadeInLeft">
+                </div>
+                <div class="col-md-10 col-lg-6 wow fadeInRight">
+                    <!-- Bootstrap tabs-->
+                    <div class="tabs-custom tabs-jean" id="tabs-1">
+                        <!-- Tab panes-->
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tabs-1-1" role="tabpanel">
+                                <div class="box-info-creative">
+                                    <h4 class="box-info-creative-title"><a href="#">providing quality baked goods
+                                            for all customers</a></h4>
+                                    <div class="box-info-creative-text">Our mission is to create a bakery that makes
+                                        the best quality baked goods on site from scratch, and where both employees
+                                        and customers would feel comfortable.</div><a
+                                        class="link-classic box-info-creative-link" href="#">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tabs-1-2" role="tabpanel">
+                                <div class="box-info-creative">
+                                    <h4 class="box-info-creative-title"><a href="#">Ensuring the Best Atmosphere for
+                                            Everyone</a></h4>
+                                    <div class="box-info-creative-text">We see the most important part of our
+                                        business in ensuring the happiness of our staff and the satisfaction of our
+                                        clients by creating a welcoming and caring atmosphere.</div><a
+                                        class="link-classic box-info-creative-link" href="#">Read more</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tabs-1-3" role="tabpanel">
+                                <div class="box-info-creative">
+                                    <h4 class="box-info-creative-title"><a href="#">Serving only the freshest baked
+                                            goods for you</a></h4>
+                                    <div class="box-info-creative-text">We aim to deliver the best baked goods for
+                                        corporate events and individual celebrations, while also offering the best
+                                        level of customer service in the United States.</div><a
+                                        class="link-classic box-info-creative-link" href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nav tabs-->
+                        <div class="nav-tabs-wrap">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-1-1"
+                                        data-bs-toggle="tab" aria-selected="true" role="tab">Our mission</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-2"
+                                        data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="tab">Our
+                                        Values</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-3"
+                                        data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="tab">Our
+                                        goals</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA 2-->
+    <section class="section section-xxl section-inset-1 bg-image">
+        <div class="container box-cta">
+            <h3 class="fw-normal text-transform-none wow fadeInDown text-decorative text-primary text-spacing-75">
+                Unique Flavors and Fresh Ingredients</h3>
+            <h2 class="text-spacing-75 text-black-800 wow fadeScale">All Kinds of Cakes</h2><a
+                class="button button-lg button-primary button-zakaria wow fadeInUp" href="#">Read More</a>
+        </div>
+    </section>
+
+    <!-- Page Footer-->
+    <footer class="section footer-modern">
+        <div class="footer-modern-body section-xl">
+            <div class="container">
+                <div class="row row-40 row-md-50 justify-content-xl-between">
+                    <div class="col-md-10 col-lg-3 col-xl-4 wow fadeInRight">
+                        <div class="inset-xl-right-70">
+                            <h5 class="footer-modern-title">Gallery</h5>
+                            <div class="row row-10 gutters-10" data-lightgallery="group">
+                                <div class="col-4 col-sm-2 col-lg-4">
+                                    <!-- Thumbnail Minimal--><a class="thumbnail-minimal" href="images/Img.png"
+                                        data-lightgallery="item"><img src="images/Img.png" alt="" width="130"
+                                            height="130"></a>
+                                </div>
+                                <div class="col-4 col-sm-2 col-lg-4">
+                                    <!-- Thumbnail Minimal--><a class="thumbnail-minimal" href="images/Img.png"
+                                        data-lightgallery="item"><img src="images/Img.png" alt="" width="130"
+                                            height="130"></a>
+                                </div>
+                                <div class="col-4 col-sm-2 col-lg-4">
+                                    <!-- Thumbnail Minimal--><a class="thumbnail-minimal" href="images/Img.png"
+                                        data-lightgallery="item"><img src="images/Img.png" alt="" width="130"
+                                            height="130"></a>
+                                </div>
+                                <div class="col-4 col-sm-2 col-lg-4">
+                                    <!-- Thumbnail Minimal--><a class="thumbnail-minimal" href="images/Img.png"
+                                        data-lightgallery="item"><img src="images/Img.png" alt="" width="130"
+                                            height="130"></a>
+                                </div>
+                                <div class="col-4 col-sm-2 col-lg-4">
+                                    <!-- Thumbnail Minimal--><a class="thumbnail-minimal" href="images/Img.png"
+                                        data-lightgallery="item"><img src="images/Img.png" alt="" width="130"
+                                            height="130"></a>
+                                </div>
+                                <div class="col-4 col-sm-2 col-lg-4">
+                                    <!-- Thumbnail Minimal--><a class="thumbnail-minimal" href="images/Img.png"
+                                        data-lightgallery="item"><img src="images/Img.png" alt="" width="130"
+                                            height="130"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7 col-lg-5 wow fadeInRight" data-wow-delay=".1s">
+                        <h5 class="footer-modern-title">Quick Links</h5>
+                        <ul class="footer-modern-list footer-modern-list-2 d-sm-inline-block d-md-block">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="Shop.html">Shop</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li><a href="Gallery.html">What We Offer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3 wow fadeInRight" data-wow-delay=".2s">
+                        <h5 class="footer-modern-title">Get in touch</h5>
+                        <ul class="contacts-creative">
+                            <li>
+                                <div class="unit unit-spacing-sm flex-column flex-md-row">
+                                    <div class="unit-left"><span class="icon mdi mdi-map-marker"></span></div>
+                                    <div class="unit-body"><a href="#">9790 Lawrence 2225<br>Monett,
+                                            MO 65708 USA</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="unit unit-spacing-sm flex-column flex-md-row">
+                                    <div class="unit-left"><span class="icon mdi mdi-phone"></span></div>
+                                    <div class="unit-body"><a href="tel:#">+1 (417) 669 9109</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="unit unit-spacing-sm flex-column flex-md-row">
+                                    <div class="unit-left"><span class="icon mdi mdi-email-outline"></span></div>
+                                    <div class="unit-body"><a href="mailto:#">mgperez120@gmail.com</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="list-inline list-social-3 list-inline-sm">
+                            <li><i class="fa-brands fa-facebook"></i></li>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                            <li><i class="fa-brands fa-facebook-messenger"></i></li>
+                            <li><i class="fa-brands fa-snapchat"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-modern-panel text-center">
+            <div class="container">
+                <p class="rights"><span>©&nbsp;</span><span
+                        class="copyright-year">2024</span><span>.&nbsp;</span><span>Dulce
+                        Capricho</span><span>.&nbsp;</span><span>All Rights
+                        Reserved</span><span>.&nbsp;</span><a>Privacy Policy.</a></p>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
                 items: 3, // Number of items to show at once
                 margin: 20, // Space between items
@@ -1108,5 +509,5 @@
             });
         });
     </script>
-    
+
 </body>
