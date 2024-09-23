@@ -8156,7 +8156,7 @@ textarea.textarea-lg {
     text-align: center;
     border: 10px solid #f3f7f8;
     padding: 30px 15px 90px;
-    background-color: white;
+    background-color: white; 
     background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: cover;
