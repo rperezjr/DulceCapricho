@@ -46,9 +46,8 @@
                             <div class="rd-navbar-nav-wrap toggle-original-elements">
                                 <ul class="rd-navbar-nav">
                                     <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a></li>
-                                    <li class="rd-nav-item"><a class="rd-nav-link" href="Gallery.html">Gallery</a></li>
                                     <li class="rd-nav-item active"><a class="rd-nav-link" href="Shop.html">Shop</a></li>
-                                    <li class="rd-nav-item"><a class="rd-nav-link" href="cart.html">Cart</a></li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="Gallery.html">Gallery</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -124,74 +123,48 @@
         </div>
         </div>
     </section>
-    <!-- Gallery Item -->
+    
+    <!-- Shop Section -->
     <section class="section section-xxl bg-default">
         <div class="container">
             <h2 class="text-center wow fadeScale">Shop</h2>
             <div class="row">
-                <!-- Gallery Item -->
-                <div class="col-md-4">
-                    <div class="gallery-item">
-                        <img src="images/Img.png" alt="Delicious Cake">
-                        <div class="caption">
-                            <h4>Delicious Cake</h4>
-                            <p>A beautiful and tasty creation from our bakery.</p>
+                <!-- Card Item -->
+                <div class="col-md-4 col-sm-6 mb-4"> <!-- Use mb-4 for spacing between rows -->
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="images/Img.png" alt="A beautifully decorated delicious cake">
+                        <div class="card-body">
+                            <h5 class="card-title">Delicious Cake</h5>
+                            <p class="card-text">A beautiful and tasty creation from our bakery.</p>
                             <div class="price">$20.00</div>
-                            <button class="btn btn-add-to-cart add-to-cart" data-name="Delicious Cake"
-                                data-price="20">Add to Cart</button>
                         </div>
                     </div>
                 </div>
-                <!-- Gallery Item -->
-                <div class="col-md-4">
-                    <div class="gallery-item">
-                        <img src="images/Img.png" alt="Cupcakes">
-                        <div class="caption">
-                            <h4>Cupcakes</h4>
-                            <p>Perfectly decorated cupcakes for any occasion.</p>
+                <!-- Card Item -->
+                <div class="col-md-4 col-sm-6 mb-4"> <!-- Use mb-4 for spacing between rows -->
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="images/Img.png" alt="Perfectly decorated cupcakes">
+                        <div class="card-body">
+                            <h5 class="card-title">Cupcakes</h5>
+                            <p class="card-text">Perfectly decorated cupcakes for any occasion.</p>
                             <div class="price">$15.00</div>
-                            <button class="btn btn-add-to-cart add-to-cart" data-name="Cupcakes" data-price="15">Add to
-                                Cart</button>
                         </div>
                     </div>
                 </div>
-                <!-- Gallery Item -->
-                <div class="col-md-4">
-                    <div class="gallery-item">
-                        <img src="images/Img.png" alt="Wedding Cake">
-                        <div class="caption">
-                            <h4>Wedding Cake</h4>
-                            <p>An elegant wedding cake that will impress your guests.</p>
+                <!-- Card Item -->
+                <div class="col-md-4 col-sm-6 mb-4"> <!-- Use mb-4 for spacing between rows -->
+                    <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="images/Img.png" alt="An elegant wedding cake">
+                        <div class="card-body">
+                            <h5 class="card-title">Wedding Cake</h5>
+                            <p class="card-text">An elegant wedding cake that will impress your guests.</p>
                             <div class="price">$300.00</div>
-                            <button class="btn btn-add-to-cart add-to-cart" data-name="Wedding Cake"
-                                data-price="300">Add to Cart</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Cart Modal -->
-    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <ul id="cart-items"></ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Footer -->
     <footer class="bg-light py-4">
@@ -204,34 +177,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        let cart = [];
-
-        $(document).ready(function () {
-            $('.add-to-cart').on('click', function () {
-                const itemName = $(this).data('name');
-                const itemPrice = $(this).data('price');
-
-                // Add item to cart
-                cart.push({ name: itemName, price: itemPrice });
-
-                // Alert user
-                alert(`${itemName} has been added to your cart!`);
-                updateCartCount();
-            });
-        });
-
-        function updateCartCount() {
-            const cartCount = cart.length;
-            $('#cart-count').text(cartCount);
-
-            // Update cart items in the modal
-            $('#cart-items').empty(); // Clear existing items
-            cart.forEach(item => {
-                $('#cart-items').append(`<li>${item.name} - $${item.price}</li>`);
-            });
-        }
-    </script>
 </body>
 
 </html>

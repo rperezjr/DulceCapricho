@@ -45,9 +45,8 @@
                         <div class="rd-navbar-nav-wrap toggle-original-elements">
                             <ul class="rd-navbar-nav">
                                 <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a></li>
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="Gallery.html">Gallery</a></li>
                                 <li class="rd-nav-item"><a class="rd-nav-link" href="Shop.html">Shop</a></li>
-                                <li class="rd-nav-item"><a class="rd-nav-link" href="cart.html">Cart</a></li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="Gallery.html">Gallery</a></li>
                             </ul>
                         </div>
                     </div>
@@ -210,7 +209,6 @@
             <!-- Owl Carousel-->
             <div class="owl-carousel owl-style-9" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4"
                 data-margin="30" data-dots="true" data-autoplay="false">
-
                 <!-- Product 1-->
                 <article class="product">
                     <div class="product-body">
@@ -225,13 +223,7 @@
                         </div>
                     </div>
                     <span class="product-badge product-badge-sale">Sale</span>
-                    <div class="product-button-wrap">
-                        <button class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                            onclick="addToCart({ id: 1, name: 'Chocolate Truffles', price: 23.00, quantity: 1, image: 'images/Img.png' })">Add
-                            to Cart</button>
-                    </div>
                 </article>
-
                 <!-- Product 2-->
                 <article class="product">
                     <div class="product-body">
@@ -244,13 +236,7 @@
                             <div class="product-price">$25.00</div>
                         </div>
                     </div>
-                    <div class="product-button-wrap">
-                        <button class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                            onclick="addToCart({ id: 2, name: 'Chocolate Pudding', price: 25.00, quantity: 1, image: 'images/Img.png' })">Add
-                            to Cart</button>
-                    </div>
                 </article>
-
                 <!-- Product 3-->
                 <article class="product">
                     <div class="product-body">
@@ -264,13 +250,7 @@
                         </div>
                     </div>
                     <span class="product-badge product-badge-new">New</span>
-                    <div class="product-button-wrap">
-                        <button class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                            onclick="addToCart({ id: 3, name: 'Dark Chocolate Cake', price: 15.00, quantity: 1, image: 'images/Img.png' })">Add
-                            to Cart</button>
-                    </div>
                 </article>
-
                 <!-- Product 4-->
                 <article class="product">
                     <div class="product-body">
@@ -283,13 +263,7 @@
                             <div class="product-price">$12.00</div>
                         </div>
                     </div>
-                    <div class="product-button-wrap">
-                        <button class="button button-primary-2 button-zakaria fl-bigmug-line-shopping202"
-                            onclick="addToCart({ id: 4, name: 'Chocolate Cookies', price: 12.00, quantity: 1, image: 'images/Img.png' })">Add
-                            to Cart</button>
-                    </div>
                 </article>
-
             </div>
         </div>
     </section>
@@ -314,12 +288,12 @@
 
     <!-- About Us-->
     <section class="section section-xxl bg-default">
-        <div class="container">
+        <div class="container text-center">
             <h2 class="wow fadeScale">About us</h2>
             <div class="row row-30 row-lg justify-content-center">
-                <div class="col-sm-8 col-md-7 col-lg-6 wow fadeInLeft">
+                <div class="col-sm-8 col-md-7 col-lg-6 mx-auto wow fadeInLeft">
                 </div>
-                <div class="col-md-10 col-lg-6 wow fadeInRight">
+                <div class="col-md-10 col-lg-6 mx-auto wow fadeInRight">
                     <!-- Bootstrap tabs-->
                     <div class="tabs-custom tabs-jean" id="tabs-1">
                         <!-- Tab panes-->
@@ -487,14 +461,13 @@
     <script>
         $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
-                items: 3, // Number of items to show at once
+                items: 4, // Number of items to show at once
                 margin: 20, // Space between items
                 dots: true, // Enable dots for navigation
-                nav: true, // Show navigation arrows
+                nav: false, // Show navigation arrows
                 loop: true, // Infinite loop
                 autoplay: false, // Disable autoplay
                 smartSpeed: 500, // Speed of transition
-                navText: ['<', '>'], // Navigation arrows text
                 responsive: {
                     0: {
                         items: 1 // Show 1 item for small screens
@@ -503,7 +476,7 @@
                         items: 2 // Show 2 items for medium screens
                     },
                     1000: {
-                        items: 3 // Show 3 items for larger screens
+                        items: 4 // Show 3 items for larger screens
                     }
                 }
             });
